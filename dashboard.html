@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>TeachMate AI</h2>
+            <ul>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="upload.html">📂 Assignments</a></li>
+                <li><a href="feedback.html">📑 Grading</a></li>
+                <li><a href="setting.html">⚙ Settings</a></li>
+                <li><a href="index.html">🚪 Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome, <span id="user-name">User</span> 👋</h1>
+            </header>
+
+            <!-- Overview Cards -->
+            <div class="cards">
+                <div class="card">
+                    <h3>Assignments Pending</h3>
+                    <p id="pending-count">5</p>
+                </div>
+                <div class="card">
+                    <h3>Assignments Graded</h3>
+                    <p id="graded-count">12</p>
+                </div>
+                <div class="card">
+                    <h3>AI Feedback Generated</h3>
+                    <p id="feedback-count">8</p>
+                </div>
+            </div>
+
+            <!-- Recent Assignments Table -->
+            <div class="assignments">
+                <h2>Recent Assignments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Submitted By</th>
+                            <th>Status</th>
+                            <th>Feedback</th>
+                        </tr>
+                    </thead>
+                    <tbody id="assignment-table">
+                        <!-- Dynamic Data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

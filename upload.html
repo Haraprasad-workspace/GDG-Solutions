@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Assignment</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Assignment</h2>
+
+        <form id="upload-form">
+            <!-- Assignment Title -->
+            <div class="input-group">
+                <label>Assignment Title</label>
+                <input type="text" id="title" required>
+            </div>
+
+            <!-- Description -->
+            <div class="input-group">
+                <label>Description</label>
+                <textarea id="description" rows="3" required></textarea>
+            </div>
+
+            <!-- File Upload -->
+            <div class="input-group">
+                <label>Upload File (PDF, DOCX, JPG, PNG)</label>
+                <input type="file" id="file" accept=".pdf, .docx, .jpg, .png" required>
+                <p id="file-name">No file chosen</p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Assignment</button>
+        </form>
+
+        <!-- Upload Preview -->
+        <div class="preview">
+            <h3>Preview</h3>
+            <p><strong>Title:</strong> <span id="preview-title">-</span></p>
+            <p><strong>Description:</strong> <span id="preview-description">-</span></p>
+            <p><strong>File:</strong> <span id="preview-file">No file</span></p>
+        </div>
+    </div>
+
+    <script src="upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Settings</h2>
+
+        <!-- Profile Section -->
+        <div class="section">
+            <h3>Profile Information</h3>
+            <label>Name:</label>
+            <input type="text" id="name" value="John Doe">
+            
+            <label>Email:</label>
+            <input type="email" id="email" value="john.doe@example.com">
+
+            <label>Change Password:</label>
+            <input type="password" id="password" placeholder="New Password">
+            
+            <button onclick="updateProfile()">Update Profile</button>
+        </div>
+
+        <!-- Preferences -->
+        <div class="section">
+            <h3>Preferences</h3>
+            <label>
+                <input type="checkbox" id="dark-mode"> Enable Dark Mode
+            </label>
+            <label>
+                <input type="checkbox" id="notifications" checked> Enable Notifications
+            </label>
+            <label>
+                <input type="checkbox" id="ai-feedback" checked> Receive AI Feedback
+            </label>
+            <button onclick="savePreferences()">Save Preferences</button>
+        </div>
+
+        <!-- Logout -->
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="setting.js"></script>
+</body>
+</html>
