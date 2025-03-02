@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0D47A1, #1976D2, #42A5F5);
+    color: white;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Login Box */
+.login-box {
+    width: 40%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn {
+    background: none;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.option-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Register Button */
+.register-btn {
+    background: white;
+    color: #0D47A1;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Image */
+.image-container img {
+    width: 200px;
+}
