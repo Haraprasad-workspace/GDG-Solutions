@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import openai
 import os
 from dotenv import load_dotenv
+API_KEY = "ewocedbdbuboebwboeedhdoeh932"
 
 load_dotenv()  # Load API key from .env file
 
