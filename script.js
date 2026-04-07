@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleFormText = document.getElementById("toggle-form");
     const confirmPasswordGroup = document.getElementById("confirm-password-group");
     const authForm = document.getElementById("auth-form");
+    const API_key = "asobdobwefowbebfeo9109nd90mcw"
 
     let isRegistering = false;
 
